@@ -1,0 +1,7 @@
+          John    Mary    Dave   Anne  Bob
+English    56      73      45     78    51    
+History    67      82      42     85    49 
+Maths      68      80      51     92    58
+Physics    73      78      46     83    54
+Chemistry  72      79      60     77    62
+Biology    64      80      54     89    68
