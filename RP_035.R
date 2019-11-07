@@ -50,8 +50,8 @@ rm(list=ls())
 dane<-women
 # Zmieñ nazwy kolumn na nazwy polskie
 colnames(dane)<-c("wzrost","waga")
-# Przelicz wzrost i wagê na miary metryczne (1 cal=2,51 cm i 1 funt=0,4536 kg)
-dane$wzrost=dane$wzrost*2.51
+# Przelicz wzrost i wagê na miary metryczne (1 cal=2,54 cm i 1 funt=0,4536 kg)
+dane$wzrost=dane$wzrost*2.54
 dane$waga=dane$waga*0.4536
 # Dodaj kolumnê BMI (waga/wzrost[m]^2)
 dane<-cbind(dane,BMI=round(dane$waga/(dane$wzrost/100)^2,2))

@@ -21,9 +21,9 @@ cor(dane,method = "spearman")   #Współczynnik korelacji rang Spearmana
 # Estymaja przedziałowa ---------------------------------------------------
 dane<-women
 colnames(dane)<-c("wzrost","waga")
-dane$wzrost<-dane$wzrost*2.51
+dane$wzrost<-dane$wzrost*2.54
 dane$waga<-dane$waga*0.4536
-ufność<-qt(1-0.05/2,length(dane$wzrost-1))*
+ufność<-qt(1-0.05/2,length(dane$wzrost)-1)*
   sd(dane$wzrost)/sqrt(length(dane$wzrost)-1)
 przedział<-cbind(mean(dane$wzrost)-ufność,mean(dane$wzrost)+ufność)
 cat("Przedział, w którym z 95% pawdopodobieństwem zawiera się \nśrednia wzrostu dla całej populacji to",przedział)
